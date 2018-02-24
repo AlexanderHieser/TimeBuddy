@@ -16,12 +16,17 @@ import * as moment from 'moment'
 export class DashboardPage {
 
   date:string = "Hello";
+  weekday_name:string = "";
+  month_name:string ="";
+  month:Array<string> = ["Hello","hello2"];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.date = moment().format("DD.MM.YYYY");
+    this.weekday_name = moment().format("dddd");
+    this.month_name = moment().format("MMMM");
   }
 
   ionViewDidLoad() {
-    this.date = moment().format("DD.MM.YYYY");
     console.log('ionViewDidLoad DashboardPage');
   }
 

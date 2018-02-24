@@ -1,5 +1,6 @@
 page-dashboard {
-
+ margin: 0px;
+ padding: 0px;
 }
 
 .today {
@@ -12,4 +13,16 @@ page-dashboard {
 
 .higlighted {
     font-weight: bold;
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+.divider {
+    border-bottom: 1px solid color($colors,secondary)
+}
+
+.current_time {
+    padding-top: 20px;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
