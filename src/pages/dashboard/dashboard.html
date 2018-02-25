@@ -12,9 +12,6 @@
     <ion-title>Dashboard</ion-title>
   </ion-navbar>
 </ion-header>
-
-
-
 <ion-content padding>
   <div text-center>
     <p class="today">{{weekday_name}}</p>
@@ -29,7 +26,7 @@
       <ion-col>
         <div text-center>
           <p>Start</p>
-          <p ion-text color="secondary" class="higlighted">--:--:--</p>
+          <p ion-text color="secondary" class="higlighted"></p>
         </div>
       </ion-col>
       <ion-col>
@@ -43,7 +40,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <button ion-button full color="positiv">Start</button>
+        <button (click)="startTime()" ion-button full color="positiv">Start</button>
       </ion-col>
       <ion-col>
         <button ion-button full color="negativ">End</button>

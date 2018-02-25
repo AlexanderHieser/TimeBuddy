@@ -22,9 +22,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Dashboard', component: DashboardPage },
-      { title: 'History', component: DashboardPage },
-      { title: 'Options', component: DashboardPage }
+      { image: 'ios-home-outline', title: ' Dashboard', component: DashboardPage },
+      { image: 'ios-stats-outline',title: ' History',   component: HistoryPage },
+      { image: 'ios-options-outline',title: '  Options',   component: OptionsPage }
     ];
 
   }

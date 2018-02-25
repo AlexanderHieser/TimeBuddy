@@ -20,6 +20,9 @@ export class DashboardPage {
   month_name:string ="";
   month:Array<string> = ["Hello","hello2"];
 
+  start:Date;
+  end:Date;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.date = moment().format("DD.MM.YYYY");
     this.weekday_name = moment().format("dddd");
@@ -28,6 +31,16 @@ export class DashboardPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DashboardPage');
+  }
+
+  startTime() {
+    this.start = new Date();
+    console.log("Start at"+moment(this.start).format("hh:mm:ss"));
+  }
+
+  stopTime() {
+    this.end = new Date();
+    console.log("End at" + moment(this.end).format("hh:mm:ss"));
   }
 
 }

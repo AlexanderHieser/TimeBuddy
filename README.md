@@ -1,5 +1,5 @@
 # TimeBuddy
-TimeBuddy time tracking app
+Time tracking app
 
 Created with Ionic3 :)
 

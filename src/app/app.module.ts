@@ -6,11 +6,15 @@ import { MyApp } from './app.component';
 import { DashboardPage } from '../pages/dashboard/dashboard'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HistoryPage } from '../pages/history/history';
+import { OptionsPage } from '../pages/options/options';
 
 @NgModule({
   declarations: [
     MyApp,
-    DashboardPage
+    DashboardPage,
+    HistoryPage,
+    OptionsPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    DashboardPage
+    DashboardPage,
+    HistoryPage,
+    OptionsPage
   ],
   providers: [
     StatusBar,
